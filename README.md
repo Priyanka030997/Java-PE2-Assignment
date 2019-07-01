@@ -1,0 +1,1 @@
+This respository for practical exercise2.It consists of 6 programs.I use methods and call that method in main class.I use power function for calculating power of the given number.In student grade program,I use separate methods for calculating average,maximum,minimum of the marks.
