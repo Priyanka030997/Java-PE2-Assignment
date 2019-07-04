@@ -9,6 +9,7 @@ public class PalindromeStringTest {
     PalindromeString palindromestring;
     @Before
     public void setup()
+
     {
         palindromestring=new PalindromeString();
     }
@@ -23,6 +24,12 @@ public class PalindromeStringTest {
     {
         String result=palindromestring.CheckPalindrome("hello");
         assertEquals("Not Palindrome",result);
+    }
+    @Test
+    public void StringisNull()
+    {
+        String result=palindromestring.CheckPalindrome("");
+        assertEquals("null",result);
     }
 
 }

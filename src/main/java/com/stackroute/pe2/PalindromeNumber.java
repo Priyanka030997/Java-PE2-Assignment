@@ -1,7 +1,6 @@
 package com.stackroute.pe2;
-
+//check given number is palindrome or not
 public class PalindromeNumber {
-    //check given number is palindrome or not
     public String CheckPalindrome(int number)
     {
         int temp=number;

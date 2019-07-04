@@ -1,22 +1,40 @@
 package com.stackroute.pe2;
 
 public class FindFactorialOfNumber {
-    public int FindFactorialOfGivenNumber(int number) {
-        int factorial = 1, Max_value = 2147483647,result=0;
-        if (number == 0) {
-            result= 1;
-        }
-        else {
-            for (int i = 1; i <= number; i++) {
-                factorial = factorial * i;
+    public void intFactorial(){
+
+        int fact = 1, num;
+        int max = Integer.MAX_VALUE;
+
+        for(int i = 1; i<30; i++){
+            for (int j = i; j >= 1; j--){
+                fact = fact * j;
             }
-            // System.out.print("Factorial of "+number+" is");
-            if (factorial <= Max_value)
-            {
-                result=factorial;
+            if(fact <= max && fact > 0 )
+                System.out.println("Factorial of "+i+" is "+fact);
+            else {
+                System.out.println("Factorial of " + i + " is out of range");
+                break;
             }
+            fact = 1;
         }
-        return result;
+    }
+
+    public void longFactorial(){
+        long fact = 1, num;
+
+        for(int i = 1; i<30; i++){
+            for (int j = i; j >= 1; j--){
+                fact = fact * j;
+            }
+            if(fact <= Long.MAX_VALUE && fact > 0 )
+                System.out.println("Factorial of "+i+" is "+fact);
+            else {
+                System.out.println("Factorial of " + i + " is out of range");
+                return;
+            }
+            fact = 1;
+        }
     }
 }
 
